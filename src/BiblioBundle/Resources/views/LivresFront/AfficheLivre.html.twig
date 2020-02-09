@@ -1,0 +1,24 @@
+{% extends "home.html.twig" %}
+{% block farouk %}
+<br><br><br>
+<h1>Liste des Livres</h1>
+
+    {% for cc in list %}
+        <td class="card">
+            <div class="team-img">
+                <img height="350px" width="250px" style="background-image: url('{{ asset('images/' ~ cc.image) }}')">
+            </div>
+            <div>{{ cc.nom }}</div>
+            <div>{{ cc.auteur }}</div>
+            <div>{{ cc.quantite - cc.nbpersonnes }}</div>
+            <div>{{ cc.description }}</div>
+
+
+            <div>
+                <button type="submit" class="btn-danger"><a href="{{ path('DeleteLivre',{'id':cc.idLivre}) }}">Delete</a></button>
+            </div>
+        </td>
+    {% endfor %}
+
+
+{% endblock %}

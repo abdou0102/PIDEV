@@ -1,0 +1,11 @@
+BiblioBundle\Entity\Categorie:
+    type: entity
+    table: null
+    repositoryClass: BiblioBundle\Repository\CategorieRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

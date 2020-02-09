@@ -1,0 +1,23 @@
+biblio_homepage:
+    path:     /
+    defaults: { _controller: BiblioBundle:Default:index }
+
+ajoutLivre:
+    path:     /ajoutLivre
+    defaults: { _controller: BiblioBundle:Livres:AjoutLivre }
+
+AfficheLivre:
+    path:     /AfficheLivre
+    defaults: { _controller: BiblioBundle:Livres:AfficheLivre }
+
+AfficheLivreF:
+    path:     /AfficheLivreF
+    defaults: { _controller: BiblioBundle:Livres:AfficheLivreF }
+
+UpdateLivre:
+    path: /UpdateLivre/{id}
+    defaults: {_controller: BiblioBundle:Livres:UpdateLivre}
+
+DeleteLivre:
+    path: /DeleteLivre/{id}
+    defaults: {_controller: BiblioBundle:Livres:DeleteLivre}
